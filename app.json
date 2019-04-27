@@ -1,0 +1,15 @@
+{
+  "name": "wunder-front",
+  "scripts": {
+  },
+  "env": {},
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "stack": "heroku-18",
+  "buildpacks": [
+
+  ]
+}

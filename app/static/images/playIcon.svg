@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="12px" viewBox="0 0 10 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Lesson-Type--Blockly-(Menu-Min)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-565.000000, -770.000000)">
+        <g id="Blockly" transform="translate(96.000000, 88.000000)" fill="#FFD263">
+            <g id="Preview">
+                <g id="PreviewFooter" transform="translate(0.000000, 648.000000)">
+                    <g id="Button/Primary/Icon/Large" transform="translate(454.000000, 20.000000)">
+                        <g id="Icon" transform="translate(12.000000, 12.000000)">
+                            <g id="play-1" transform="translate(3.000000, 2.000000)">
+                                <path d="M0,0.574480097 C0,0.0443762729 0.364560768,-0.154337164 0.811768306,0.129056365 L9.26417432,5.48531038 C9.71250158,5.76941347 9.71138186,6.23074515 9.26417432,6.51413868 L0.811768306,11.8703927 C0.36344105,12.1544958 0,11.956269 0,11.424969 L0,0.574480097 Z" id="Combined-Shape"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

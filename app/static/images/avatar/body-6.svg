@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500px" height="500px" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51 (57462) - http://www.bohemiancoding.com/sketch -->
+    <title>body-6</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="body-6" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Bounds" x="2.27373675e-13" y="0" width="500" height="500"></rect>
+        <g transform="translate(27.000000, 30.000000)" fill="#FF7F40" fill-rule="nonzero" id="Shape">
+            <path d="M197.32,6.25 C205.42,2.75 214.07,0.13 222.96,0.01 C231.61,-0.07 239.99,2.72 247.78,6.26 C271.52,17.74 291.12,35.97 309.32,54.71 C331.25,77.81 350.69,103.19 368.28,129.71 C384.46,154.25 399.04,179.86 411.59,206.45 C426.41,238.19 438.74,271.45 444.39,306.14 C447.91,327.28 447.61,348.92 444.64,370.09 C439.63,405.81 426.28,440.36 405.72,470 L41.2,470 C11.2,426.62 -3.48,372.79 0.75,320.19 C4.43,281.5 17.15,244.27 32.8,208.91 C54.31,161.33 81.87,116.4 115.18,76.16 C130.02,58.49 145.97,41.62 164.04,27.19 C174.31,19.02 185.3,11.61 197.32,6.25 Z"></path>
+        </g>
+    </g>
+</svg>

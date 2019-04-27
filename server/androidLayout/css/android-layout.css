@@ -1,0 +1,358 @@
+/* Browsers that support flexbox are allowed */
+.wrapper,
+.unsupported-browser {
+	display: none;
+}
+
+.flexbox .wrapper,
+.no-flexbox .unsupported-browser {
+	display: block;
+}
+
+/* Specifically excluding IE -- not enough time to debug the issue(s) */
+.ie .unsupported-browser {
+	display: block;
+}
+
+.ie .wrapper {
+	display: none;
+}
+
+
+/* ===== */
+
+html, body {
+	min-height: 100%;
+	overflow: hidden;
+}
+
+.wrapper {
+	height: 100%;
+	min-width: 900px;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+/* ===== The Phone and Screen ===== */
+
+.phone {
+	position: absolute;
+	top: 26px;
+	left: 50%;
+	background-image: url(../images/port_back.png);
+	background-repeat: no-repeat;
+	
+	width: 523px;
+	height: 878px;
+	
+	transform-origin: 50% 0;
+	transition: top 1s ease-in-out;
+}
+
+@media (max-height: 650px) {
+	.phone {
+		top: 0;
+	}
+}
+
+@media (max-height: 580px) {
+	.phone {
+		top: -13px;
+	}
+}
+
+@media (max-height: 540px) {
+	.phone {
+		top: -32px;
+	}
+}
+
+.screen:before {
+	content: "?";
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	z-index: 10;
+	margin-top: -250px;
+	opacity: 0;
+	font-size: 300px;
+	text-align: center;
+	pointer-events: none;
+	transition: opacity 0.2s;
+}
+
+.invalid-code .screen:before {
+	opacity: 0.1;
+	transition: opacity 2s;
+}
+
+.evaluating-invalid-code .screen-wrapper,
+.invalid-code .screen-wrapper {
+	-webkit-filter: blur(2px);
+    filter: blur(2px);
+    opacity: 0.4;
+}
+
+.testing-mode body {
+	position: absolute;
+	left: 0;
+	width: 860px;
+}
+.test-reference-image {
+	display: none;
+	position: absolute;
+	top: 12px;
+	right: -310px;
+	width: 242px;
+	transform: scale(1.333);
+	transform-origin: 50% 0;
+	z-index: -1;
+}
+
+.testing-mode .test-reference-image {
+	display: block;
+}
+
+
+.output-area-wrapper {
+	position: relative;
+}
+
+.phone {
+	transform: scale(0.75);
+	margin-top: -62px;
+	margin-left: -265px;
+}
+
+
+
+
+.phone canvas {
+	max-width:100%;
+	max-height:100%;
+	margin:0 auto;
+	display: block;
+}
+
+.screen {
+	position: absolute;
+	
+	top: 122px;
+	right: 82px;
+	
+	width: 360px;
+	height: 640px;
+	
+	/*opacity:0.5;*/
+	/*transform: translateY(-600px) translateX(280px) scale(0.333333);*/
+	
+	/*z-index: -1;*/
+}
+
+.screen-wrapper {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	
+	background-color: #eee;
+	
+	transition-property: opacity;
+	transition-duration: 0.2s;
+}
+
+
+.image-asset-list {
+	padding: 0;
+}
+
+.image-asset {
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	list-style: none;
+	margin: 0 0 15px;
+	padding: 0 0 50%;
+	box-shadow: 0px 2px 4px 0.5px rgba(0,0,0,0.4);
+}
+
+.image-asset-name {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 2px 2px 1px;
+	text-align: center;
+	font-size:16px;
+	background-color: rgba(255,255,255,0.7);
+}
+
+
+/* Utilities */
+.absolute {
+	position: absolute;
+}
+
+.hidden-pending-setTimeout {
+	visibility: hidden;
+}
+
+/* ===== Styling for Android Layout XML ===== */
+
+.element-outlines-enabled .screen * {
+	outline: solid 2px rgba(255,0,0,0.3);
+}
+
+.element-outlines-enabled .screen .hovering {
+	outline-color: rgba(155,0,0,1);
+}
+
+/* Layout */
+
+.layout_width-match_parent,
+.layout_height-match_parent {
+	display: table; /* This ensures 100% works properly when nested inside a parent with display:flex; set */
+}
+
+	.layout_width-match_parent {
+		width: 100%;
+	}
+
+	.layout_height-match_parent {
+		height: 100%;
+	}
+
+
+.layout_width-wrap_content,
+.layout_height-wrap_content {
+	display: table;
+	line-height: 1.2;
+}
+
+
+.LinearLayout {
+	display: -webkit-flex!important;
+	display: flex!important;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.LinearLayout.orientation-vertical {
+    flex-direction: column;
+}
+
+.FrameLayout > * {
+	position: absolute;
+}
+
+.RelativeLayout > * {
+	position: absolute;
+}
+
+.TextView {
+	overflow-wrap: break-word;
+	overflow: hidden;
+	line-height: 1.2;
+	word-break: break-word;
+}
+
+.FrameLayout,
+.LinearLayout,
+.RelativeLayout,
+.TextView,
+.Button,
+.View {
+	background-image: none!important;
+}
+
+
+/*.output-area :not(.layout_height-wrap_content) {
+	flex-grow: 1;
+}
+*/
+
+/* ImageView Attributes */
+.ImageView {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.ImageView,
+.scaleType-centerInside {
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.scaleType-centerCrop {
+	background-size: cover;
+	background-position: center;
+}
+
+.scaleType-center {
+	background-size: auto;
+	background-position: center;
+}
+
+.gravity-center,
+.gravity-center_horizontal {
+	text-align: center;
+}
+
+.gravity-center .helper-child,
+.gravity-center_horizontal .helper-child{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.gravity-center .helper-child,
+.gravity-center_vertical .helper-child {
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.gravity-left {
+	text-align: left;
+}
+
+.gravity-right {
+	text-align: right;
+}
+
+.gravity-top .helper-child {
+	margin-top: 0;
+	margin-bottom: auto;
+}
+
+.gravity-bottom .helper-child {
+	margin-top: auto;
+	margin-bottom: 0;
+}
+
+
+.layout_width-match_parent.gravity-center,
+.layout_width-match_parent.gravity-center_vertical,
+.layout_width-match_parent.gravity-bottom {
+	display: -webkit-flex!important;
+	display: flex!important;
+}
+
+
+/* Tablet Mode */
+
+.tablet-mode .wrapper {
+	overflow: hidden;
+	max-width: none;
+}
+
+.tablet-mode .wrapper .input-area-col {
+	width: 71%;
+}
+
+.tablet-mode .wrapper .output-area-col {
+	width: 29%;
+}

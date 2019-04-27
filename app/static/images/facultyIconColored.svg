@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="12px" viewBox="0 0 16 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>facultyIcon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Wunder" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Course" transform="translate(-236.000000, -460.000000)">
+            <g id="Faculty" transform="translate(136.000000, 432.000000)">
+                <g transform="translate(100.000000, 26.000000)" id="facultyIcon">
+                    <g>
+                        <rect id="Mask" x="0" y="0" width="16" height="16"></rect>
+                        <g id="education" transform="translate(1.333333, 3.333333)" stroke="#7A89FF" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M2.33333333,7.5 C2.33333333,7.14977149 2.33333333,6.09291414 2.33333333,4.32942795 L5.42167682,5.73811091 C6.21247985,6.0988191 7.12085348,6.0988191 7.91165652,5.73811091 L11,4.32942795 C11,6.09291414 11,7.14977149 11,7.5 C11,8.51252204 9.05990058,9.33333333 6.66666667,9.33333333 C4.27343275,9.33333333 2.33333333,8.51252204 2.33333333,7.5 Z M5.69844507,0.180001568 C6.23317909,-0.0606287418 7.10294816,-0.0593714805 7.63488826,0.180001568 L12.9333298,2.56430028 C13.4680639,2.80493059 13.46527,3.19632667 12.9333298,3.43569972 L7.63488826,5.81999843 C7.10015424,6.06062874 6.23038518,6.05937148 5.69844507,5.81999843 L0.400003485,3.43569972 C-0.134730537,3.19506941 -0.131936623,2.80367333 0.400003485,2.56430028 L5.69844507,0.180001568 Z" id="Combined-Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

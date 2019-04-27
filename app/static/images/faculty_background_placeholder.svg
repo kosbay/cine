@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="704px" viewBox="0 0 1440 704" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="-0.189375%" y1="49.8467391%" x2="99.9625%" y2="49.8467391%" id="linearGradient-1">
+            <stop stop-color="#E94287" offset="0%"></stop>
+            <stop stop-color="#FCA15A" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-53.296875%" y1="-50.03%" x2="86.2273438%" y2="86.0175%" id="linearGradient-2">
+            <stop stop-color="#3D3393" offset="0%"></stop>
+            <stop stop-color="#9B3D89" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-150.375%" y1="200.46%" x2="206.246875%" y2="-66.512%" id="linearGradient-3">
+            <stop stop-color="#3D3393" offset="0%"></stop>
+            <stop stop-color="#9B3D89" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0.016%" y1="49.9590909%" x2="99.9093333%" y2="49.9590909%" id="linearGradient-4">
+            <stop stop-color="#A1FFCE" offset="0%"></stop>
+            <stop stop-color="#FAFFD1" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0.0206896552%" y1="50.3675676%" x2="99.3844828%" y2="50.3675676%" id="linearGradient-5">
+            <stop stop-color="#3BB8A1" offset="0%"></stop>
+            <stop stop-color="#247B9E" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-2.1%" y1="48.3230769%" x2="99.6%" y2="48.3230769%" id="linearGradient-6">
+            <stop stop-color="#3BB8A1" offset="0%"></stop>
+            <stop stop-color="#247B9E" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-0.220979021%" y1="49.98%" x2="99.941958%" y2="49.98%" id="linearGradient-7">
+            <stop stop-color="#E94287" offset="0%"></stop>
+            <stop stop-color="#FCA15A" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-59.1483871%" y1="-61.6620253%" x2="77.1169355%" y2="77.6303797%" id="linearGradient-8">
+            <stop stop-color="#3D3393" offset="0%"></stop>
+            <stop stop-color="#9B3D89" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-51.5894737%" y1="105.9%" x2="107.726316%" y2="18.5444444%" id="linearGradient-9">
+            <stop stop-color="#3D3393" offset="0%"></stop>
+            <stop stop-color="#9B3D89" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="32.0933054%" y1="30.1635036%" x2="65.1146444%" y2="66.9452555%" id="linearGradient-10">
+            <stop stop-color="#E94287" offset="0%"></stop>
+            <stop stop-color="#FCA15A" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-49.694382%" y1="-57.5%" x2="122.467416%" y2="127.718644%" id="linearGradient-11">
+            <stop stop-color="#3D3393" offset="0%"></stop>
+            <stop stop-color="#9B3D89" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-76.5466667%" y1="198.588043%" x2="86.5286667%" y2="7.10108696%" id="linearGradient-12">
+            <stop stop-color="#3D3393" offset="0%"></stop>
+            <stop stop-color="#9B3D89" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="User-Side" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Faculty-(iOS)" transform="translate(0.000000, -64.000000)">
+            <g id="Intro" transform="translate(0.000000, 64.000000)">
+                <g id="Group">
+                    <rect id="Base" fill="#FFFFFF" x="0" y="0" width="1440" height="704"></rect>
+                    <g id="Background">
+                        <rect fill="#FFFFFF" x="0" y="0" width="1440" height="648"></rect>
+                        <g id="XMLID_1896_" transform="translate(1000.000000, 544.000000)" fill-rule="nonzero">
+                            <polygon id="XMLID_1899_" fill="url(#linearGradient-1)" points="11.5742901 0.0471064815 0.699228395 6.17835648 44.1994753 31.3846065 55.074537 24.9127315"></polygon>
+                            <polygon id="XMLID_1898_" fill="url(#linearGradient-2)" points="0.699228395 8.56273148 0.699228395 6.17835648 44.1994753 31.3846065 44.1994753 33.4283565"></polygon>
+                            <polygon id="XMLID_1897_" fill="url(#linearGradient-3)" points="44.1994753 31.3846065 44.1994753 33.4283565 55.074537 27.2971065 55.074537 24.9127315"></polygon>
+                        </g>
+                        <g id="XMLID_1888_" transform="translate(1230.000000, 101.000000)" fill-rule="nonzero">
+                            <polygon id="XMLID_1891_" fill="url(#linearGradient-4)" points="6.47947531 0.703125 0.702098765 4.109375 20.4131481 15.690625 26.1905247 12.284375"></polygon>
+                            <polygon id="XMLID_1890_" fill="url(#linearGradient-5)" points="0.702098765 5.471875 0.702098765 4.109375 20.4131481 15.690625 20.4131481 16.7125"></polygon>
+                            <polygon id="XMLID_1889_" fill="url(#linearGradient-6)" points="20.4131481 15.690625 20.4131481 16.7125 26.1905247 13.30625 26.1905247 12.284375"></polygon>
+                        </g>
+                        <g id="XMLID_1900_-Copy" transform="translate(270.000000, 489.000000)" fill-rule="nonzero">
+                            <polygon id="XMLID_1903_" fill="url(#linearGradient-7)" points="6.81645062 0.3625 0.359382716 4.45 42.5002469 29.315625 48.9573148 25.228125"></polygon>
+                            <polygon id="XMLID_1902_" fill="url(#linearGradient-8)" points="0.359382716 6.49375 0.359382716 4.45 42.5002469 29.315625 42.5002469 31.359375"></polygon>
+                            <polygon id="XMLID_1901_" fill="url(#linearGradient-9)" points="42.5002469 29.315625 42.5002469 31.359375 48.9573148 27.6125 48.9573148 25.228125"></polygon>
+                        </g>
+                        <g id="XMLID_1900_-Copy-2" transform="translate(1086.000000, 38.000000)" fill-rule="nonzero">
+                            <polygon id="XMLID_1903_" fill="url(#linearGradient-7)" points="6.81645062 0.3625 0.359382716 4.45 42.5002469 29.315625 48.9573148 25.228125"></polygon>
+                            <polygon id="XMLID_1902_" fill="url(#linearGradient-8)" points="0.359382716 6.49375 0.359382716 4.45 42.5002469 29.315625 42.5002469 31.359375"></polygon>
+                            <polygon id="XMLID_1901_" fill="url(#linearGradient-9)" points="42.5002469 29.315625 42.5002469 31.359375 48.9573148 27.6125 48.9573148 25.228125"></polygon>
+                        </g>
+                        <g id="XMLID_1888_" transform="translate(376.087346, 136.375000)" fill-rule="nonzero">
+                            <polygon id="XMLID_1891_" fill="url(#linearGradient-4)" points="11.4580282 0.35189204 0.349918908 6.90105792 38.2481742 29.1682219 49.3562835 22.619056"></polygon>
+                            <polygon id="XMLID_1890_" fill="url(#linearGradient-5)" points="0.349918908 9.52072427 0.349918908 6.90105792 38.2481742 29.1682219 38.2481742 31.1329717"></polygon>
+                            <polygon id="XMLID_1889_" fill="url(#linearGradient-6)" points="38.2481742 29.1682219 38.2481742 31.1329717 49.3562835 24.5838058 49.3562835 22.619056"></polygon>
+                        </g>
+                        <g id="XMLID_1908_-Copy" transform="translate(1094.000000, 326.000000)" fill-rule="nonzero">
+                            <polygon id="XMLID_1911_" fill="url(#linearGradient-10)" points="51.3166975 0.021875 0.679691358 28.975 30.9259568 46.6875 81.9028086 17.734375"></polygon>
+                            <polygon id="XMLID_1910_" fill="url(#linearGradient-11)" points="0.679691358 31.01875 0.679691358 28.975 30.9259568 46.6875 30.9259568 49.071875"></polygon>
+                            <polygon id="XMLID_1909_" fill="url(#linearGradient-12)" points="30.9259568 46.6875 30.9259568 49.071875 81.9028086 19.778125 81.9028086 17.734375"></polygon>
+                        </g>
+                        <g id="XMLID_1908_-Copy-2" transform="translate(96.000000, 203.000000)" fill-rule="nonzero">
+                            <polygon id="XMLID_1911_" fill="url(#linearGradient-10)" points="51.3166975 0.021875 0.679691358 28.975 30.9259568 46.6875 81.9028086 17.734375"></polygon>
+                            <polygon id="XMLID_1910_" fill="url(#linearGradient-11)" points="0.679691358 31.01875 0.679691358 28.975 30.9259568 46.6875 30.9259568 49.071875"></polygon>
+                            <polygon id="XMLID_1909_" fill="url(#linearGradient-12)" points="30.9259568 46.6875 30.9259568 49.071875 81.9028086 19.778125 81.9028086 17.734375"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

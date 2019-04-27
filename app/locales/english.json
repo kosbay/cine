@@ -1,0 +1,222 @@
+{
+  "languageCode": "en",
+  "pages":{
+    "certificates": "Certificates",
+    "website": "Wunder.kz",
+    "faculties": "Faculties",
+    "faculty": "Faculty",
+    "contacts": "Contacts",
+    "contests": "Contests",
+    "courses": "Courses",
+    "course": "Course",
+    "main": "Wunder - online programming school",
+    "rating": "Rating",
+    "school": "School",
+    "login": "Login",
+    "profile": "Profile",
+    "locale": "Language",
+    "subscription": "Subscription to Tariff",
+    "news": "News",
+    "myprogram": "Education",
+    "tariffs": "Tariffs"
+  },
+  "user_certificates": {
+    "empty": "You do not have a certificate right now. If you finished all chapters in your course you can in course chapters request a certificate"
+  },
+  "loginPage": {
+    "greetings": "If you do not have an account and you want to learn more about working with us, write to the mail - email@gmail.com",
+    "label": "Login",
+    "loginPlaceholder": "login",
+    "loginWarning": "Please enter your login!",
+    "loginError": "You entered the wrong username or password",
+    "passwordPlaceholder": "Password",
+    "passwordWarning": "Please enter your password!",
+    "loginButtonLabel": "Login"
+  },
+  "headerMenu": {
+    "faculties": "Faculties",
+    "courses": "Courses",
+    "raiting": "Rating",
+    "contests": "Contests",
+    "webinar": "Webinar",
+    "login": "login",
+    "logout": "Logout",
+    "contacts": "Contacts",
+    "blog": "Blog",
+    "learn": "Learn"
+  },
+  "footer": {
+    "faculties": "Faculties",
+    "courses": "Courses",
+    "raiting": "Rating",
+    "contacts": "Contacts"
+  },
+  "homePage": {
+    "mainMessage": "Learn to program with Wunder",
+    "mainButtonLabel": "Start to learn",
+    "aboutPlatformLabel": "About the platform",
+    "aboutPlatformText": "An interactive online programming school where students gain knowledge by creating mini-projects and applications, as well as reinforce practical skills with the help of tests and automatic code validation.",
+    "learningLabel": "Learning materials",
+    "learningText": "Everything for programming training. These are video lessons, presentations, books, practical exercises, tests and exams",
+    "projectsLabel": "Work on projects",
+    "projectsText": "Knowledge is given in the context of projects and practical applications.",
+    "codeLabel": "Automated code check",
+    "codeText": "Students program practical exercises on the platform itself. Automating the process makes learning interactive and exciting",
+    "webinarsLabel": "Webinars",
+    "webinarsText": "On the platform, children directly ask questions to teachers. We also hold webinars and social media conferences on the FAQ.",
+    "childrenLabel": "Is online education suitable for children?",
+    "childrenSubLabel": "Availability 24/7",
+    "childrenText": "We need a computer, internet and sometimes a phone. You don’t need to bring a child to the courses or go by yourself. When we conducted full-time classes, someone was late or missed a class. Then he couldn’t join because he missed the material",
+    "childrenDifferenLabel": "All children are different",
+    "childrenDifferenText": "Someone grasps quickly, someone slowly. Some people like to create games and other applications. In face-to-face training, it is difficult to provide an individual approach. We have children doing what is interesting and at a comfortable speed in the courses. At the end each student creates his own unique project. ",
+    "createLabel": "Create your own",
+    "createText": "We are actively promoting the idea of ​​creating something yourself. Our homework is always practical projects that students can boast of on an instagram, put them on the application market or in case of emergency, set parents on the phone and force them to use.",
+    "introvertLabel": "Introvert Programmer",
+    "introvertText": "Programming requires a complete immersion in the problem to solve the problem. Online training eliminates the possibility of distracting from classes, leaving the teacher and student alone. Students can watch a video, ask a clarifying question to the teacher, or simply experiment without fear of peer ridicule. Programming requires a complete immersion in the problem to solve the problem. Online learning eliminates the possibility of distracting from the lesson, leaving the teacher and student alone. Students can revise There is a video, ask a clarifying question to the teacher, or just experiment, without fear of peer ridicule. "
+  },
+  "contacts": {
+    "title": "Our contacts:",
+    "phoneLabel": "Phone Number:",
+    "phoneNumber": "+7 (747) 153 82 30",
+    "emailLabel": "Email:",
+    "emailText": "contact@wunder.kz"
+  },
+  "faculties": {
+    "title": "Faculties",
+    "cardLabel": "Faculty",
+    "noName": "No Name",
+    "noDescription": "No description",
+    "oneCourse": "course",
+    "fewCourses": "course",
+    "afewCourses": "courses",
+    "oneProject": "project",
+    "fewProjects": "project",
+    "afewProjects": "projects",
+    "oneAssignment": "task",
+    "fewAssignments": "tasks",
+    "afewAssignments": "tasks",
+    "learnMoreButtonLabel": "Learn more",
+    "deniedButtonLabel": "Not available",
+    "apply": "Apply",
+    "applied": "batch file",
+    "facultyDecriptionLabel": "Faculty description:",
+    "coursesLabel": "Faculty courses",
+    "noCourses": "No courses",
+    "tasksWillDone": "Projects you will do:",
+    "continueLabel": "Continue",
+    "detailsLabel": "Details"
+  },
+  "courses": {
+    "coursesLabel": "Courses",
+    "titleCourse": "Course",
+    "descriptionLabel": "Course description:",
+    "contentLabel": "Course Content:",
+    "continueLabel": "Continue",
+    "detailsLabel": "Details",
+    "deniedButtonLabel": "Unavailable",
+    "loginButtonLabel": "Login",
+    "noName": "No Name",
+    "noDescription": "No description",
+    "error": "Error",
+    "loading": "loading"
+  },
+  "userCourse": {
+    "noName": "No Name",
+    "noDescription": "No description",
+    "progress": "Completed Projects",
+    "deniedButtonLabel": "Unavailable",
+    "continue": "Continue",
+    "done": "Passed",
+    "start": "Start",
+    "projectLabel": "Project"
+  },
+  "iceIde": {
+    "startButtonLabel": "Run",
+    "codePlaceholder": "// Your output will be here"
+  },
+  "learn": {
+    "showPopUpLabel": "Congratulations!",
+    "finishModule": "Finish module",
+    "nextLesson": "Next Lesson",
+    "hideSiderButtonLabel": "Hide menu"
+  },
+  "profile": {
+    "achievementsLabel": "Achievements",
+    "hideAchievements": "Hide",
+    "showAchievements": "Show all",
+    "skillLabel": "Skills",
+    "skillDescription": "Skills are acquired for completing courses.",
+    "logicLabel": "Logic",
+    "logicDescription": "Logic is acquired for completing courses.",
+    "knowledgeLabel": "Knowledge",
+    "knowledgeDescription": "Knowledge is acquired for passing courses.",
+    "appsLabel": "Apps",
+    "appsDescription": "Applications are purchased for completing courses.",
+    "userFaculties": "Faculties:",
+    "userFacilitiesError": "Error loading faculties",
+    "userFacultyCourseLabel": "Course",
+    "userFacultyCourseDoneLabel": "Course completed",
+    "userFacultyCourseStartLabel": "Start Course",
+    "userFacultyCourseContinueLabel": "Continue",
+    "userFacultyCoursesDoneLabel": "Courses completed:"
+  },
+  "contests": {
+    "titleLabel": "Contests",
+    "buttonLabel": "Details",
+    "noName": "No Name",
+    "noDescription": "No description",
+    "noDate": "No Date"
+  },
+  "linkSubmit": {
+    "validationError": "Enter a valid link",
+    "linkSendLabel": "Submit for review",
+    "linkSentOne": "Posted",
+    "linkSentTwo": "task",
+    "linkSentThree": "checked",
+    "taskAccepted": "Task accepted",
+    "coinAltLabel": "Success :)",
+    "taskReqected": "Task Rejected",
+    "inputPlaceholder": "Insert link"
+  },
+  "fileSubmit": {
+    "noFileErrorMessage": "Select a file",
+    "errorMessage": "Invalid file type",
+    "taskAccepted": "Task accepted",
+    "taskReqected": "Task Rejected",
+    "sendLabel": "Submit for review",
+    "linkSentOne": "Posted",
+    "linkSentTwo": "task",
+    "linkSentThree": "checked",
+    "comment": "Comment:",
+    "filePlaceholder": "Click or drag file here"
+  },
+  "quiz": {
+    "taskCompleted": "Task completed.",
+    "result": "Result:",
+    "from": "from"
+  },
+  "IDE": {
+    "statusDone": "Task completed",
+    "statusNotRight": "The result does not match the answer.",
+    "outputPlaceholder": "// Your output will be here",
+    "startButtonLabel": "Run",
+    "99": "Click the Run button",
+    "0": "Waiting",
+    "1": "Compiling",
+    "2": "Compiling",
+    "3": "Executing",
+    "11": "Compile Error",
+    "12": "Runtime Errors (Runtime)",
+    "13": "Time limit exceeded",
+    "15": "Compiled",
+    "17": "Memory limit exceeded",
+    "19": "Team is not available",
+    "20": "Internal Error"
+  },
+  "tariffs": {
+    "subscribe": "Subscribe"
+  },
+  "instagram": {
+    "subscribe": "Follow us on Instagram"
+  }
+}

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Android Visualizer</title>
+
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Include roboto.css to use the Roboto web font, material.css to include the theme and ripples.css to style the ripple effect -->
+  <link href="/androidLayout/bower_components/bootstrap-material-design/dist/css/roboto.min.css" rel="stylesheet"
+    data-noprefix>
+  <link href="/androidLayout/bower_components/bootstrap-material-design/dist/css/material.min.css" rel="stylesheet">
+  <link href="/androidLayout/bower_components/bootstrap-material-design/dist/css/ripples.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="/androidLayout/vendor/codemirror-5.3/lib/codemirror.css">
+  <link rel="stylesheet" href="/androidLayout/vendor/codemirror-ui/codemirror-ui.css" type="text/css" media="screen" />
+
+  <link rel="stylesheet" href="/androidLayout/css/editor.css">
+  <link rel="stylesheet" href="/androidLayout/css/android-layout.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+  <script src="/androidLayout/vendor/modernizr.min.js"></script>
+  <script>
+    if (navigator.userAgent.indexOf('MSIE') !== -1 || navigator.appVersion.indexOf('Trident/') > 0) {
+      document.documentElement.classList.add('ie');
+      console.log(document.documentElement.className);
+    }
+  </script>
+  <script src="/androidLayout/vendor/prefixfree.min.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="row">
+      <div class="col-xs-7 col-md-8 input-area-col">
+        <div class="panel panel-primary input-area-wrapper">
+          <div class="panel-heading">
+            <h3 class="panel-title">XML Layout Code</h3>
+          </div>
+          <div class="panel-body">
+            <ul id="input-topbar" class="nav nav-pills">
+              <li><button class="btn btn-default btn-undo">Undo</button></li>
+              <li><button class="btn btn-default btn-redo">Redo</button></li>
+              <li>
+                <p class="code-saved-msg">Code has <span class="not-word">not</span> been saved</p>
+              </li>
+              <li class="pull-right"><button class="btn btn-default btn-reset-code">Reset Code</button></li>
+            </ul>
+
+            <div class="input-area">
+
+            </div>
+
+            <div class="error-msg"></div>
+
+            <ul class="nav nav-pills">
+              <li><button class="btn btn-default btn-available-images" data-toggle="modal" data-target="#images-dialog">Available
+                  Images</button></li>
+              <li><button class="btn btn-default btn-report-issue" data-toggle="modal" data-target="#issue-dialog">Report
+                  Issue</button></li>
+              <li class="pull-right"><a href="https://drive.google.com/file/d/0B5XIkMkayHgRMVljUVIyZzNmQUU/view" class="btn btn-default btn-cheatsheet"
+                  target="_blank">Cheat Sheet</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-xs-5 col-md-4 output-area-col">
+        <div class="output-area-wrapper">
+          <div class="phone">
+            <div class="screen"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="issue-submitted-dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4>Report Submitted</h4>
+          </div>
+          <div class="modal-body">
+            <p>Thank you for the bug report!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <iframe src="" frameborder="0" id="hidden_iframe" name="hidden_iframe" class="hidden"></iframe>
+    <div id="issue-dialog" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h4 class="modal-title">Report an Issue</h4>
+          </div>
+          <div class="modal-body">
+            <p>Thank you for reporting a bug to us. Your XML code will be included with this bug report. </p>
+            <form action="https://docs.google.com/a/knowlabs.com/forms/d/1XDuFxeFRO0_yaFm-4RSQEqJT2G8fTNih0KoRMJycF_4/formResponse"
+              method="POST" target="hidden_iframe" onsubmit="submitted=true;" id="issue-form">
+              <div class="form-group voffset4">
+                <label for="entry_446623266">Description: Please write instructions describing how to reproduce the
+                  issue.</label>
+                <textarea class="form-control" name="entry.446623266" rows="4" cols="0" id="entry_446623266" aria-label="Please describe the issue. Include instructions describing how to reproduce the issue. "
+                  aria-required="true" required placeholder="Type your description here"></textarea>
+              </div>
+              <div class="form-group hidden">
+                <label class="ss-q-item-label" for="entry_440939498">XML Code:</label>
+                <textarea class="form-control" name="entry.440939498" rows="4" cols="0" class="ss-q-long" id="entry_440939498"
+                  dir="auto" aria-label="Code Paste any XML code here " placeholder="Code Goes Here"></textarea>
+              </div>
+              <div class="form-group voffset4">
+                <label for="entry_1899499144">Priority: How big of a problem is this issue for you and other students?</label>
+                <br>
+                <label class="radio-inline">
+                  <input type="radio" name="entry.379941968" value="Meh" id="group_379941968_1" role="radio" class="ss-q-radio"
+                    aria-label="Meh" required="" aria-required="true"> Meh
+                </label>
+                </li>
+                <label class="radio-inline">
+                  <input type="radio" name="entry.379941968" value="Not a big problem" id="group_379941968_2" role="radio"
+                    class="ss-q-radio" aria-label="Not a big problem" required="" aria-required="true"> Not a big
+                  problem
+                </label>
+                </li>
+                <label class="radio-inline">
+                  <input type="radio" name="entry.379941968" value="A big problem" id="group_379941968_3" role="radio"
+                    class="ss-q-radio" aria-label="A big problem" required="" aria-required="true"> A big problem
+                </label>
+                </li>
+                <label class="radio-inline">
+                  <input type="radio" name="entry.379941968" value="OMG So Huge!!" id="group_379941968_4" role="radio"
+                    class="ss-q-radio" aria-label="OMG So Huge!!" required="" aria-required="true"> OMG So Huge!!
+                </label>
+              </div>
+              <div class="form-group voffset4">
+                <label class="ss-q-item-label" for="entry_267480158">Frequency: How likely is it that others will run
+                  into this issue?</label>
+                <br>
+                <label class="radio-inline">
+                  <input type="radio" name="entry.1572993629" value="Very Unlikely" id="group_1572993629_1" role="radio"
+                    class="ss-q-radio" aria-label="Very Unlikely" required="" aria-required="true"> Very Unlikely
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="entry.1572993629" value="Unlikely" id="group_1572993629_2" role="radio"
+                    class="ss-q-radio" aria-label="Unlikely" required="" aria-required="true"> Unlikely
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="entry.1572993629" value="Likely" id="group_1572993629_3" role="radio" class="ss-q-radio"
+                    aria-label="Likely" required="" aria-required="true"> Likely
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="entry.1572993629" value="Very Likely" id="group_1572993629_4" role="radio"
+                    class="ss-q-radio" aria-label="Very Likely" required="" aria-required="true"> Very Likely
+                </label>
+              </div>
+              <div class="form-group hidden">
+                <label for="entry_1934743275">Unique ID:</label>
+                <input type="text" name="entry.1934743275" value="" class="ss-q-short" id="entry_1934743275" dir="auto"
+                  aria-label="Unique ID  " title="">
+              </div>
+
+              <input type="submit" name="submit" value="Submit" id="ss-submit" class="btn btn-primary">
+              <!--
+              <input type="hidden" name="draftResponse" value="[,,&quot;2362144712679293198&quot;]
+                          ">
+              <input type="hidden" name="pageHistory" value="0">
+              <input type="hidden" name="fbzx" value="2362144712679293198">
+              <div class="ss-item ss-navigate">
+                <table id="navigation-table">
+                  <tbody>
+                    <tr>
+                      <td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
+                        <input type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action ">
+                        <div class="ss-password-warning ss-secondary-text">Never submit passwords through Google Forms.</div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              </ol>-->
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="images-dialog" class="modal fade" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h4 class="modal-title">Available Images</h4>
+          </div>
+          <div class="modal-body">
+            <p>The following images are available to you:</p>
+            <div class="row">
+              <div class="col-xs-6">
+                <ul class="image-asset-list">
+                  <li class="image-asset" style="background-image: url(/androidLayout/images/ocean.jpg);">
+                    <div class="image-asset-name">@drawable/ocean</div>
+                  </li>
+                  <li class="image-asset" style="background-image: url(/androidLayout/images/fish.jpg);">
+                    <div class="image-asset-name">@drawable/fish</div>
+                  </li>
+                  <li class="image-asset" style="background-image: url(/androidLayout/images/cake.jpg);">
+                    <div class="image-asset-name">@drawable/cake</div>
+                  </li>
+                  <li class="image-asset" style="background-image: url(/androidLayout/images/android.jpg);">
+                    <div class="image-asset-name">@drawable/android</div>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-xs-6">
+                <ul class="image-asset-list">
+                  <li class="image-asset" style="background-image: url(/androidLayout/images/mountains.jpg);">
+                    <div class="image-asset-name">@drawable/mountains</div>
+                  </li>
+                  <li class="image-asset" style="background-image: url(/androidLayout/images/rocks.jpg);">
+                    <div class="image-asset-name">@drawable/rocks</div>
+                  </li>
+                  <li class="image-asset" style="background-image: url(/androidLayout/images/cakesmall.jpg);">
+                    <div class="image-asset-name">@drawable/cakesmall</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="col-sm-9 text-left">
+              <p>Thanks to <a href="https://www.flickr.com/photos/romainguy/with/16974639801/">Romain Guy</a> for the
+                use of his images.<br>
+                <em>Images are <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/">Creative Commons (BY-NC-SA
+                    2.0)</a></em></p>
+            </div>
+            <div class="col-sm-3">
+              <button class="btn btn-primary" data-dismiss="modal">Dismiss</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="layout-options">
+
+
+
+      <!-- <input type="checkbox" id="toggle-element-outline"><label for="toggle-element-outline">Toggle Element Outline</label> -->
+    </div>
+
+
+
+    <img class="test-reference-image" src="">
+  </div>
+
+  <div class="container unsupported-browser">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <div class="col-sm-3 text-center">
+          <img class="frown-cloud" src="/androidLayout/images/frown_cloud.png" alt="Frowning Cloud">
+        </div>
+        <div class="col-sm-9 text-center">
+          <h3>We're sorry, your browser is not supported</h3>
+          <p>Please use an up-to-date version of a modern browser<p>
+              <div class="row">
+                <div class="col-xs-6 col-sm-3 col-md-2 col-md-offset-2">
+                  <a href="https://www.google.com/intl/en/chrome/browser/desktop/index.html" class="browser-link btn">
+                    <img src="/androidLayout/images/browser-icons/chrome_24x24.png" alt="Chrome">Chrome
+                  </a>
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-2">
+                  <a href="https://www.mozilla.org/en-US/firefox/new/" class="browser-link btn">
+                    <img src="/androidLayout/images/browser-icons/firefox_24x24.png" alt="Firefox">Firefox
+                  </a>
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-2">
+                  <a href="https://support.apple.com/downloads/#safari" class="browser-link btn">
+                    <img src="/androidLayout/images/browser-icons/safari_24x24.png" alt="Safari">Safari
+                  </a>
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-2">
+                  <a href="http://www.opera.com/" class="browser-link btn">
+                    <img src="/androidLayout/images/browser-icons/opera_24x24.png" alt="Opera">Opera
+                  </a>
+                </div>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="https://cdn.firebase.com/js/client/2.0.4/firebase.js"></script>
+  <script src="/androidLayout/js/webfont.modified.js"></script>
+  <script src="/androidLayout/vendor/codemirror-5.3/lib/codemirror.js" type="text/javascript"></script>
+  <script src="/androidLayout/vendor/codemirror-5.3/addon/search/searchcursor.js" type="text/javascript"></script>
+  <script src="/androidLayout/vendor/codemirror-5.3/mode/android-xml/android-xml.js"></script>
+  <script src="/androidLayout/vendor/codemirror-ui/codemirror-ui.js" type="text/javascript"></script>
+
+  <script src="/androidLayout/js/jsDiff.js"></script>
+  <script src="/androidLayout/js/diffEngine.js"></script>
+
+  <script src="/androidLayout/js/utilities.js"></script>
+
+  <script src="/androidLayout/js/evaluator-android-xml-constants.js"></script>
+  <script src="/androidLayout/js/evaluator-android-xml-code-examples.js"></script>
+  <script src="/androidLayout/js/evaluator-android-xml.js"></script>
+  <script src="/androidLayout/js/error-service.js"></script>
+
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <script src="/androidLayout/bower_components/bootstrap-material-design/dist/js/ripples.min.js"></script>
+  <script src="/androidLayout/bower_components/bootstrap-material-design/dist/js/material.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      // This command is used to initialize some elements and make them work properly
+      $.material.init();
+    });
+  </script>
+
+  <script src="/androidLayout/js/app.js"></script>
+
+</body>
+
+</html>

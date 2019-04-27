@@ -1,0 +1,22 @@
+
+Test 360 broken
+
+
+[ ] "Did you mean to type 'blah'?"
+
+[ ] feature detection for onhashchange?
+[ ] browsers support?
+
+
+
+[ ] Button
+grey bg, Button XML class
+	android:text
+	android:width
+	android:height
+	android:background
+
+
+RatingBar?
+
+EditText?
