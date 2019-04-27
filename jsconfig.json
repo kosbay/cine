@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "server/"
+  },
+  "exclude": ["node_modules"]
+}

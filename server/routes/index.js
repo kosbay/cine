@@ -1,0 +1,45 @@
+const authRoutes = require("./auth");
+const contestRoutes = require("./contest");
+const skillRoutes = require("./skill");
+const lessonRoutes = require("./lesson");
+const moduleRouter = require("./module");
+const chapterRoutes = require("./chapter");
+const courseRoutes = require("./course");
+const facultyRoutes = require("./faculty");
+const schoolRoutes = require("./school");
+const enrollmentRoutes = require("./enrollment");
+const compileRoutes = require("./compile");
+const userRoutes = require("./user");
+const problemRoutes = require("./problems");
+const badgeRoutes = require("./badgeUp");
+const cdnRoutes = require("./cdnRoutes");
+const eventRoutes = require("./event");
+const certificateRoutes = require("./certificate");
+const userCertificateRoutes = require("./userCertificate");
+const testingRoutes = require("./testing");
+const tariffRoutes = require("./tariff");
+const notificationRoutes = require("./notification");
+
+module.exports = app => {
+  app.use("/api", authRoutes);
+  app.use("/api", contestRoutes);
+  app.use("/api", skillRoutes);
+  app.use("/api", lessonRoutes);
+  app.use("/api", moduleRouter);
+  app.use("/api", chapterRoutes);
+  app.use("/api", courseRoutes);
+  app.use("/api", facultyRoutes);
+  app.use("/api", schoolRoutes);
+  app.use("/api", enrollmentRoutes);
+  app.use("/api", compileRoutes);
+  app.use("/api", userRoutes);
+  app.use("/api", problemRoutes);
+  app.use("/api", badgeRoutes);
+  app.use("/api", cdnRoutes);
+  app.use("/api", eventRoutes);
+  app.use("/api", certificateRoutes);
+  app.use("/api", userCertificateRoutes);
+  app.use("/api", testingRoutes);
+  app.use("/api", tariffRoutes);
+  app.use("/", notificationRoutes)
+};
