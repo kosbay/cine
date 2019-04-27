@@ -1,0 +1,35 @@
+.s-i-block {
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #DFE3E9;
+}
+
+.f-i-block {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #DFE3E9;
+}
+
+.forgot {
+  color: #F05254;
+}
+
+.s-icon {
+  width: 32px;
+  height: 32px;
+  float: left;
+}
+
+.val-error {
+  color: #ED1C24;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.val-error img {
+  margin: 3px 5px -3px 0;
+}
+
+.reg-h-t-b-l {
+  padding: 30px 0;
+}

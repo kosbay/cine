@@ -1,0 +1,44 @@
+.line-cont {
+  width: 32%;
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #DFE2E5;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.stats-s-nav {
+  display: flex;
+  padding: 20px 0 20px 0;
+}
+
+.stats-s-nav img {
+  height: 50px;
+}
+
+.stats-s-nav-l {
+  height: 160px;
+  padding: 20px 0 20px 0;
+}
+
+.charts-s-nav {
+  padding: 20px;
+  border-bottom: 1px solid #DFE2E5;
+}
+
+.stats-text {
+  padding: 5px 10px;
+  box-sizing: border-box;
+  height: 50px;
+  align-items: center;
+}
+
+.stat-text-m {
+  color: #7F8FA4;
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+.m-width220 {
+  min-width: 220px;
+}

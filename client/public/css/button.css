@@ -1,0 +1,299 @@
+.btn-app {
+  width: 130px;
+  height: 36px;
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: #F05254;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-app-b {
+  width: 130px;
+  height: 36px;
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: #1991EB;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-app-l {
+  box-sizing: border-box;
+  width: 100%;
+  height: 36px;
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: #F05254;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-app-s {
+  width: 110px;
+  height: 36px;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-app-to-h {
+  height: 36px;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-g {
+  background-color: #36AF47;
+}
+
+.btn-bl {
+  background-color: #1991EB;
+  color: #fff;
+}
+
+.btn-b {
+  margin-left: 10px;
+  color: #354052;
+  background-color: #fff;
+  border: 1px solid #DFE2E5;
+}
+
+.btn-app a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.btn-info {
+  width: 130px;
+  height: 36px;
+  border-radius: 4px;
+  color: #354052;
+  background-color: #F3F5F7;
+  font-size: 14px;
+  margin-right: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-info-l {
+  box-sizing: border-box;
+  width: 100%;
+  height: 36px;
+  border-radius: 4px;
+  color: #354052;
+  background-color: #ffffff;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  border: 1px solid #DFE2E5;
+}
+
+.btn-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-wrap a {
+  width: 48.5%;
+}
+
+.reg-btn {
+  width: 100%;
+  height: 33px;
+  border-radius: 4px;
+  border: none;
+  background-color: #36AF47;
+  color: #FFFFFF;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.s-btn {
+  box-sizing: border-box;
+  width: 100%;
+  height: 33px;
+  border-radius: 4px;
+  border: none;
+  color: #FFFFFF;
+  font-size: 14px;
+  margin-bottom: 5px;
+  line-height: 33px;
+  padding-left: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.upl-btn {
+  background-color: #1991EB;
+  width: 100%;
+  color: #ffffff;
+  font-size: 14px;
+  border-radius: 4px;
+  height: 33px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.dropdown {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.fb {
+  background-color: #4568B2;
+}
+
+/* .fb span {
+  margin: 20%;
+} */
+
+.g {
+  background-color: #DC4E41;
+}
+
+/* .g span {
+  margin: 20%;
+} */
+
+.vk {
+  background-color: #4D76A1;
+}
+
+/* .vk span {
+  margin: 20%;
+} */
+
+.p-next-clear-btn {
+  padding-bottom: 20px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 60%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.p-next-clear-btn-l {
+  padding-bottom: 20px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 67.5%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.p-next-clear-btn-l-m {
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 67.5%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.long-f-b {
+  width: 100% !important;
+  padding-bottom: 0 !important;
+}
+
+.p-modal-clear-btn-l {
+  padding: 0 20px 20px 20px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.p-save-clear-btn {
+  padding-bottom: 20px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.add-spec {
+  cursor: pointer;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+
+.delete-icon {
+  margin-top: 25px;
+  cursor: pointer;
+  height: 32px;
+  border: 1px solid #DFE2E5;
+  border-radius: 50%;
+  vertical-align: bottom;
+  width: 32px;
+  bottom: 0;
+  display: grid;
+  place-items: center center;
+}
+
+.edit-icon {
+  cursor: pointer;
+  height: 32px;
+  border: 1px solid #DFE2E5;
+  border-radius: 50%;
+  vertical-align: bottom;
+  width: 32px;
+  bottom: 0;
+  display: grid;
+  place-items: center center;
+}
+
+.add-spec-icon {
+  margin: 3px 5px -2px 0;
+}
+
+.change-p-f {
+  cursor: pointer;
+}
+
+.padding-t-20 {
+  padding-top: 20px;
+}
+
+.ch-i-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  /* background: rgba(232, 234, 238, 0.7); */
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.add-fac-btn {
+  text-align: center;
+  cursor: pointer;
+  padding: 10px 0;
+  border: 1px solid #DFE2E5;
+  border-radius: 4px;
+}
+
+.width-cnt-ed {
+  width: 50%;
+}
+
+.margin-auto {
+  margin: auto;
+}
+
+.margin-t-10 {
+  margin-top: 10px;
+}
+
+.cursor-p {
+  cursor: pointer;
+}

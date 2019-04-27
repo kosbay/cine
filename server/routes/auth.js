@@ -1,15 +1,18 @@
-const express = require('express');
+const express = require('express')
+const router = express.Router()
+const bcrypt = require('bcryptjs')
+const jwt = require('jsonwebtoken')
+const passport = require('passport')
+const mailer = require("nodemailer")
 
-const router = express.Router();
+const validateRegisterInput = require('../validation/registration')
+const validateLoginInput = require('../validation/login')
+const keys = require('../config/keys')
 
-const passport = require("passport");
+const { registration, login, current } = require('../controllers/auth.controllers')
 
-const { registrateUser, logout, login, currentUser } = require("../controllers/auth");
+router.post('/registration', registration)
+router.post('/login', login)
+router.get('/current', current)
 
-
-router.post('/auth/register', registrateUser);
-router.get('/auth/logout', logout);
-router.post('/auth/login', passport.authenticate("local", { session: false }), login);
-router.get('/auth/current_user', passport.authenticate('jwt', { session:false }), currentUser)
-
-module.exports = router;
+module.exports = router

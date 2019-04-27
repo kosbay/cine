@@ -1,0 +1,112 @@
+.b-big-text {
+  color: #354052;
+  font-size: 40px;
+}
+
+.s-r-text {
+  color: #354052;
+  font-size: 14px;
+  word-wrap: break-word;
+}
+
+.text-14 {
+  color: #354052;
+  font-size: 14px;
+}
+
+.text-14-w {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.m-ta-text {
+  color: #7F8FA4;
+  font-size: 14px;
+}
+
+.g-sml-text {
+  color: #7F8FA4;
+  font-size: 12px;
+}
+
+.g-mid-text {
+  color: #7F8FA4;
+  font-size: 13px;
+}
+
+.g-mid-text-2 {
+  color: #7F8FA4;
+  font-size: 12px;
+}
+
+.padd-t5 {
+  padding-top: 5px;
+}
+
+.padd-b5 {
+  padding-bottom: 5px;
+}
+
+.blue-text {
+  color: #2A9DF4;
+  font-size: 14px;
+}
+
+.text-18 {
+  color: #354052;
+  font-size: 18px;
+}
+
+.text-16 {
+  color: #354052;
+  font-size: 16px;
+}
+
+.w-text-16 {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.text-wrap {
+  padding-right: 10px;
+  margin-top: 1px;
+}
+
+.modal-h-t {
+  color: #354052;
+  font-size: 20px;
+}
+
+.error-text {
+  color: #F05254;
+  font-size: 14px;
+}
+
+.success-text {
+  color: #2BB415;
+  font-size: 14px;
+}
+
+.padding-l-10 {
+  padding-left: 10px;
+}
+
+.padding-l-20 {
+  padding-left: 20px;
+}
+
+.padding-t-10 {
+  padding-top: 10px;
+}
+
+.agree {
+  color: #36AF47;
+}
+
+.refuse {
+  color: #F85359;
+}
+
+.wait {
+  color: #354052;
+}

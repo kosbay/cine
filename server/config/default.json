@@ -1,0 +1,8 @@
+{
+  "jwt": {
+    "privateKey": "DAULETSYRYMBETOV",
+  },
+  "dbConfig": {
+    "db": "mongodb://localhost/vidly"
+  }
+}

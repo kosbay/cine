@@ -1,0 +1,32 @@
+.home {
+  height: calc(100% - 70px);
+  box-sizing: border-box;
+  padding: 20px;
+  overflow: scroll;
+  background-color: #EFF3F6;
+  position: relative;
+}
+
+.u-page {
+  display: flex;
+  flex-wrap: wrap;
+  align-items:flex-start;
+  align-content:flex-start;
+}
+
+.h-head-text {
+  text-align: center;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.h-text-b {
+  color: #7F8FA4;
+  font-size: 12px;
+}
+
+.conf {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 20px;
+}

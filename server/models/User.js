@@ -1,37 +1,39 @@
-const mongoose = require("mongoose");
-const mongoosePaginate = require('mongoose-paginate');
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
-const { Schema } = mongoose;
-const passportLocalMongoose = require("passport-local-mongoose");
-
-const User = new Schema({
-  name: String,
-  username: String,
-  password: String,
-  role: { 
-    type: String,
-    enum: ["user", "admin", "reviewer", "teacher", "demo", "individual", "group", "digital"],
-    default: "user"
+const UserSchema = new Schema({
+  profile: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'profile'
   },
-  additional: { 
+  avatar: {
     type: String,
-    enum: ["unpayed", "payed"],
-    default: "unpayed"
+    default: 'uploads/image/default-avatar.svg'
   },
-  isVerified: Boolean,
-  courses: [{ type: Schema.Types.ObjectId, ref: "Course" }],
-  faculties: [{ type: Schema.Types.ObjectId, ref: "Faculty" }],
-  school: { type: Schema.Types.ObjectId, ref: "School" },
-  skills: [{ type: Schema.Types.ObjectId, ref: "Skill" }],
-  wupai: { type: Number, default: 0 },
-  avatar: { body: Number, eyes: Number, mouth: Number },
-  grade: String,
-  phoneNumber: String,
-  parentPhoneNumber: String,
-  tariff: { type: Schema.Types.ObjectId, ref: "Tariff" }
+  email: {
+    type: String,
+    required: true
+  },
+  password: {
+    type: String,
+    required: true
+  },
+  role: {
+    type: String,
+    required: true
+  },
+  date: {
+    type: Date,
+    default: Date.now
+  },
+  resetPasswordToken:{
+    type: String,
+    default: null
+  },
+  resetPasswordExpires:{
+    type: Date,
+    default: null
+  }
 });
 
-User.plugin(passportLocalMongoose, { populateFields: ["skills", "school"] });
-User.plugin(mongoosePaginate);
-
-module.exports = mongoose.model("User", User);
+module.exports = User = mongoose.model('user', UserSchema);
